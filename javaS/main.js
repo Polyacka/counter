@@ -17,6 +17,7 @@ function mooveOne(){
     if (count > 0){
         count -=2;
     } else {
+        alert("already empty");
     }
     updateCounter()
 }
@@ -37,3 +38,11 @@ function reset(){
     document.getElementById("number").textContent = currentNum;
 }
 
+const pure ={
+name:'Ivan',
+    age: 23
+}
+console.log(pure)
+
+const pureStringyfied = JSON.stringify(pure)
+JSON.parse(pureStringyfied)
